@@ -49,11 +49,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * 作者：Stran on 2017/3/23 03:23
+ * 作者：Lsp on 2017/3/23 03:23
  * 描述：${图片加载 }
- * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 @SuppressLint("CheckResult")
 public class ImageUitl {

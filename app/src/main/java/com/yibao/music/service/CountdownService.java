@@ -12,7 +12,6 @@ import com.yibao.music.util.StringUtil;
 
 /**
  * @ Name:   CountdownService
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2019/1/2/ 22:49
  * @ Des:    倒计时服务
  * @author Luoshipeng

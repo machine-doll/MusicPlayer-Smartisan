@@ -15,8 +15,7 @@ import com.yibao.music.view.ZoomImageView;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.adapter
  * @文件名: SplashPagerAdapter
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.strangermy98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/3/16 19:52
  * @描述： {TODO}
  */

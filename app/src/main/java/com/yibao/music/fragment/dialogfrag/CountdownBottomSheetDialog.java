@@ -35,7 +35,7 @@ import io.reactivex.schedulers.Schedulers;
  * Des：${TODO}
  * Time:2017/8/22 14:11
  *
- * @author Stran
+ * @author Lsp
  */
 public class CountdownBottomSheetDialog {
     private static final String TAG = "====" + CountdownBottomSheetDialog.class.getSimpleName() + "    ";

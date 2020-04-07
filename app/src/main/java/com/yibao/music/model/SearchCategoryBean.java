@@ -3,7 +3,6 @@ package com.yibao.music.model;
 /**
  * @author: Luoshipeng
  * @ Name:    SearchCategoryBean
- * @ Email:   strangermy98@gmail.com
  * @ GitHub:  https://github.com/1900Star
  * @ Time:    2019/3/17/ 0:20
  * @ Des:     TODO

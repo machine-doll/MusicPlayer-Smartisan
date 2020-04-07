@@ -6,7 +6,6 @@ import com.yibao.music.model.TitleAndArtistBean;
 /**
  * @ Author: Luoshipeng
  * @ Name:   TitleArtistUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/5/5/ 18:01
  * @ Des:    //TODO
  */

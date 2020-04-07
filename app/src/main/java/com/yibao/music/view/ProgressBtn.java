@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 import com.yibao.music.util.ColorUtil;
 
@@ -13,10 +12,10 @@ import com.yibao.music.util.ColorUtil;
  * Des：${TODO}
  * Time:2017/8/12 21:32
  *
- * @author Stran
+ * @author Lsp
  */
 public class ProgressBtn
-        extends Button {
+        extends androidx.appcompat.widget.AppCompatButton {
     private boolean isProgressEnable = true;
     private int max = 0;
     private int progress;

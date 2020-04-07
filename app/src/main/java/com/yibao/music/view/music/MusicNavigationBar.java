@@ -17,7 +17,6 @@ import com.yibao.music.util.Constants;
 
 /**
  * @ Name:   NavigationBar
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/8/11/ 0:18
  * @ Des:     底部的导航Tab
  * @author Luoshipeng

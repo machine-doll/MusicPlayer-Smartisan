@@ -15,7 +15,6 @@ import okhttp3.Response;
 /**
  * @ Author: Luoshipeng
  * @ Name:   OkHttpUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/10/3/ 21:08
  * @ Des:    TODO
  */

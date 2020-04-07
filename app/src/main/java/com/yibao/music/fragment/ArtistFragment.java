@@ -26,8 +26,7 @@ import butterknife.BindView;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.artisanlist
  * @文件名: ArtistFragment
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: AppCompatActivity
  * @创建时间: 2018/2/4 23:49
  * @描述： {TODO}
  */

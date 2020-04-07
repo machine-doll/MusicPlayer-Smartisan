@@ -175,7 +175,7 @@ public class SearchFragment extends BaseFragment {
     }
 
     private void initData() {
-        mSearchDao = MusicApplication.getIntstance().getSearchDao();
+        mSearchDao = MusicApplication.getInstance().getSearchDao();
         // 搜索记录
         List<SearchHistoryBean> searchList = mSearchDao.queryBuilder().list();
         if (searchList != null && searchList.size() > 0) {

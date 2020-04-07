@@ -17,7 +17,7 @@ import java.util.Objects;
  * Des：${TODO}
  * Time:2017/5/31 18:50
  *
- * @author Stran
+ * @author Lsp
  */
 public abstract class BaseDialogFragment
         extends DialogFragment {

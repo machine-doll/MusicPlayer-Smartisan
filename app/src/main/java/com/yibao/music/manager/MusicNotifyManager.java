@@ -28,7 +28,7 @@ import com.yibao.music.util.TitleArtistUtil;
 
 
 /**
- * @author Stran
+ * @author Lsp
  * Des：${通知管理}
  * Time:2017/5/30 13:27
  */

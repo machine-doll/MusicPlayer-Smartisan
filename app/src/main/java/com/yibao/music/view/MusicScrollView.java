@@ -10,7 +10,6 @@ import android.view.ViewTreeObserver;
 
 /**
  * @ Name:   MyScrollView
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/6/9/ 16:04
  * @ Des:     {ScrollView嵌套RecyclerView+悬浮标签}
  * @author Luoshipeng

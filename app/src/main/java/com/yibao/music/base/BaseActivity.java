@@ -39,8 +39,7 @@ import io.reactivex.schedulers.Schedulers;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.base
  * @文件名: BaseActivity
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/20 13:07
  * @描述： {TODO}
  */
@@ -63,9 +62,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         StatService.start(getApplicationContext());
         mBus = RxBus.getInstance();
-        mMusicDao = MusicApplication.getIntstance().getMusicDao();
-        mSearchDao = MusicApplication.getIntstance().getSearchDao();
-        mPlayListDao = MusicApplication.getIntstance().getPlayListDao();
+        mMusicDao = MusicApplication.getInstance().getMusicDao();
+        mSearchDao = MusicApplication.getInstance().getSearchDao();
+        mPlayListDao = MusicApplication.getInstance().getPlayListDao();
     }
 
 

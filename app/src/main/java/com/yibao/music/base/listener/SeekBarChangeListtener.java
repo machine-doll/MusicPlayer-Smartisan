@@ -5,7 +5,7 @@ import android.widget.SeekBar;
 /**
  * Des：${音乐播放界面的进度条监听器}
  * Time:2017/9/2 04:02
- * @author Stran
+ * @author Lsp
  */
 public class SeekBarChangeListtener implements SeekBar.OnSeekBarChangeListener{
     @Override

@@ -27,11 +27,10 @@ import com.yibao.music.util.RxBus;
 import com.yibao.music.util.SharedPreferencesUtil;
 
 /**
- * Author：Sid
  * Des：${删除列表}
  * Time:2017/5/31 18:37
  *
- * @author Stran
+ * @author Lsp
  */
 public class ScannerConfigDialog
         extends DialogFragment implements View.OnClickListener {

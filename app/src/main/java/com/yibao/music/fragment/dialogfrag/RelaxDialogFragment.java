@@ -14,11 +14,10 @@ import com.yibao.music.util.DialogUtil;
 import com.yibao.music.util.SpUtil;
 
 /**
- * Author：Sid
  * Des：${TODO}
  * Time:2017/5/30 13:27
  *
- * @author Stran
+ * @author Lsp
  */
 public class RelaxDialogFragment
         extends DialogFragment {

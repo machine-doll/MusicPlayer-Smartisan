@@ -24,7 +24,6 @@ import com.yibao.music.view.ProgressBtn;
 /**
  * @ Author: Luoshipeng
  * @ Name:   SmartisanControlBar
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/8/11/ 1:57
  * @ Des:
  */

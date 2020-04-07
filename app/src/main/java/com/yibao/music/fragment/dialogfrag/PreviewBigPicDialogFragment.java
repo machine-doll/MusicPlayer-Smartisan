@@ -14,11 +14,10 @@ import com.yibao.music.util.LogUtil;
 import com.yibao.music.view.ZoomImageView;
 
 /**
- * Author：Sid
  * Des：${TODO}
  * Time:2017/5/30 13:27
  *
- * @author Stran
+ * @author Lsp
  */
 public class PreviewBigPicDialogFragment
         extends BaseDialogFragment {

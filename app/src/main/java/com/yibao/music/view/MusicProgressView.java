@@ -18,11 +18,10 @@ import com.yibao.music.util.LogUtil;
 
 
 /**
- * 作者：Stran on 2017/3/27 16:55
+ * 作者：Lsp on 2017/3/27 16:55
  * 描述：${自定义ProgressBar}
- * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 public class MusicProgressView
         extends LinearLayout {

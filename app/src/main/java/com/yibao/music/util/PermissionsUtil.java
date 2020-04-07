@@ -5,7 +5,6 @@ import android.hardware.Camera;
 /**
  * @ Author: Luoshipeng
  * @ Name:   PermissionsUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2019/2/24/ 23:09
  * @ Des:    TODO
  */

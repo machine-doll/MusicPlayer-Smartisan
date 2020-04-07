@@ -13,7 +13,6 @@ import com.yibao.music.base.BaseRvAdapter;
 import com.yibao.music.model.AddAndDeleteListBean;
 import com.yibao.music.model.MusicBean;
 import com.yibao.music.util.Constants;
-import com.yibao.music.util.LogUtil;
 import com.yibao.music.util.RxBus;
 import com.yibao.music.util.StringUtil;
 
@@ -26,7 +25,7 @@ import butterknife.ButterKnife;
  * Des：${快速列表的Adapter}
  * Time:2017/8/22 14:31
  *
- * @author Stran
+ * @author Lsp
  */
 public class BottomSheetAdapter
         extends BaseRvAdapter<MusicBean> {
@@ -54,7 +53,7 @@ public class BottomSheetAdapter
             // 侧滑删除收藏歌曲
             musicHolder.mDeleteLayout.setOnClickListener(v -> {
                 musicItem.setFavorite(false);
-                MusicApplication.getIntstance().getMusicDao().update(musicItem);
+                MusicApplication.getInstance().getMusicDao().update(musicItem);
                 RxBus.getInstance().post(new AddAndDeleteListBean(Constants.NUMBER_FIVE, position, musicItem.getTitle()));
             });
             // MusicBottomSheetDialog页面接收,用于播放收藏列表中点击Position的音乐

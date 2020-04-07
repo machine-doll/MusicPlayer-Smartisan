@@ -12,7 +12,7 @@ import android.view.animation.ScaleAnimation;
 import com.yibao.music.base.listener.MyAnimatorUpdateListener;
 
 /**
- * 作者：Stran on 2017/3/28 02:24
+ * 作者：Lsp on 2017/3/28 02:24
  * 描述：${动画帮助类}
  * 邮箱：strangermy@outlook.com
  * @author Luoshipeng

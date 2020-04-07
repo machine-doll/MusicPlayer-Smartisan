@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * Des：${BaseAdapter}
  * Time:2017/6/2 13:07
  *
- * @author Stran
+ * @author Lsp
  */
 public abstract class BaseRvAdapter<T>
         extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements SectionIndexer {

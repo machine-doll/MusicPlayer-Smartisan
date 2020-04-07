@@ -30,8 +30,7 @@ import io.reactivex.schedulers.Schedulers;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.artisanlist
  * @文件名: SongFragment
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: AppCompatActivity
  * @创建时间: 2018/2/4 21:45
  * @描述： {歌曲TAB}
  */

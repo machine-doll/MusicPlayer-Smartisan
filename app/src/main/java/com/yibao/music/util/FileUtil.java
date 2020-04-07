@@ -22,7 +22,6 @@ import java.io.IOException;
 
 /**
  * 描述：${文件操作工具类}
- * 邮箱：strangermy@outlook.com
  *
  * @author Luoshipeng
  */
@@ -163,7 +162,7 @@ public class FileUtil {
 
     public static boolean isAndroidQFileExists(String path) {
         AssetFileDescriptor afd = null;
-        ContentResolver cr = MusicApplication.getIntstance().getContentResolver();
+        ContentResolver cr = MusicApplication.getInstance().getContentResolver();
         try {
             Uri uri = Uri.parse(path);
             afd = cr.openAssetFileDescriptor(uri, "r");

@@ -18,7 +18,6 @@ import com.yibao.music.util.StringUtil;
 /**
  * @author Luoshipeng
  * @ Name:   MediaSessionManager
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/11/18/ 17:57
  * @ Des:    TODO
  */

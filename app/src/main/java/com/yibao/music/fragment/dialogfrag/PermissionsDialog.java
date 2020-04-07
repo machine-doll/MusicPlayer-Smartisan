@@ -1,8 +1,6 @@
 package com.yibao.music.fragment.dialogfrag;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -13,27 +11,32 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
+
 import com.yibao.music.R;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
- * Author：Sid
  * Des：${TODO}
  * Time:2017/5/31 18:37
  *
- * @author Stran
+ * @author Lsp
  */
 public class PermissionsDialog
         extends DialogFragment implements View.OnClickListener {
 
 
     private View mView;
-    private TextView mTvAddListCancle;
+    private TextView mTvAddListCancel;
     private TextView mTvAddListContinue;
 
     public static PermissionsDialog newInstance() {
         return new PermissionsDialog();
     }
 
+    @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -52,7 +55,7 @@ public class PermissionsDialog
     }
 
     private void initListener() {
-        mTvAddListCancle.setOnClickListener(this);
+        mTvAddListCancel.setOnClickListener(this);
         mTvAddListContinue.setOnClickListener(this);
     }
 
@@ -60,7 +63,7 @@ public class PermissionsDialog
     private void initView() {
         TextView title = mView.findViewById(R.id.tv_title);
         mView.findViewById(R.id.edit_add_list).setVisibility(View.GONE);
-        mTvAddListCancle = mView.findViewById(R.id.tv_add_list_cancle);
+        mTvAddListCancel = mView.findViewById(R.id.tv_add_list_cancel);
         mTvAddListContinue = mView.findViewById(R.id.tv_add_list_continue);
         mTvAddListContinue.setText(R.string.go_open);
         mTvAddListContinue.setVisibility(View.VISIBLE);
@@ -70,7 +73,7 @@ public class PermissionsDialog
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tv_add_list_cancle:
+            case R.id.tv_add_list_cancel:
                 dismiss();
                 break;
             case R.id.tv_add_list_continue:

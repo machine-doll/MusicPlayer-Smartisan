@@ -14,7 +14,7 @@ import com.yibao.music.util.MusicListUtil;
 
 
 /**
- * @author ThinkPad
+ * @author Lsp
  * @date 2016/8/12
  */
 public class MusicSlideBarBack

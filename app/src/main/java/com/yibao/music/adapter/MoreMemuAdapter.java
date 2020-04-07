@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
  * Des：${快速列表的Adapter}
  * Time:2017/8/22 14:31
  *
- * @author Stran
+ * @author Lsp
  */
 public class MoreMemuAdapter
         extends BaseRvAdapter<MoreMenuBean> {

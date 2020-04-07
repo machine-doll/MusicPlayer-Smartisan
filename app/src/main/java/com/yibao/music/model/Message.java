@@ -1,9 +1,7 @@
 package com.yibao.music.model;
 
 /**
- * @ Author: Luoshipeng
  * @ Name:   Message
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/11/14/ 22:11
  * @ Des:    TODO
  * @author Luoshipeng

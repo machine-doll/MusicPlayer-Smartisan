@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * @项目名： BigGirl
  * @包名： ${PACKAGE_NAME}
  * @文件名: ${NAME}
- * @author: Stran
+ * @author: Lsp
  * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
  * @创建时间: 2016/11/5 15:53
  * @描述： {TODO}

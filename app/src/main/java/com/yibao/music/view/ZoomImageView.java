@@ -14,16 +14,15 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewTreeObserver;
-import android.widget.ImageView;
 
 
 /**
  * 可根据点击/多指触控 放大,放小的ImageVIew
  *
- * @author Created by Stran on 2016/12/16.
+ * @author Created by Lsp on 2016/12/16.
  */
 public class ZoomImageView
-        extends ImageView
+        extends androidx.appcompat.widget.AppCompatImageView
         implements ViewTreeObserver.OnGlobalLayoutListener
         , View.OnTouchListener, ScaleGestureDetector.OnScaleGestureListener {
 

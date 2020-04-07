@@ -19,9 +19,7 @@ import java.util.List;
 /**
  * @ Author: Luoshipeng
  * @ Name:   FlowLayoutView
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/16/ 20:37
- * @ Des:    < https://github.com/fanrunqi/FlowLayout >
  */
 public class FlowLayoutView extends ViewGroup {
     @Override

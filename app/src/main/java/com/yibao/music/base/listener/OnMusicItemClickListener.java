@@ -3,7 +3,7 @@ package com.yibao.music.base.listener;
 /**
  * Des：${TODO}
  * Time:2017/5/14 09:49
- * @author Stran
+ * @author Lsp
  */
 public interface OnMusicItemClickListener {
     /**

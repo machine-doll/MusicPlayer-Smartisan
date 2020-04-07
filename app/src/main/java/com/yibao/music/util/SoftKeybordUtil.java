@@ -5,7 +5,6 @@ import android.view.inputmethod.InputMethodManager;
 /**
  * @ Author: Luoshipeng
  * @ Name:   SoftKeybordUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/15/ 19:34
  * @ Des:    TODO
  */

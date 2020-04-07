@@ -2,7 +2,6 @@ package com.yibao.music.model;
 
 /**
  * @ Name:   MoreMenuStatus
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/12/2/ 23:36
  * @ Des:    TODO
  * @author Luoshipeng

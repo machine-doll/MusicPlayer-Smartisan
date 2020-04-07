@@ -1,13 +1,10 @@
 package com.yibao.music.util;
 
-import android.net.Uri;
 import android.util.Log;
 
 import com.yibao.music.MusicApplication;
-import com.yibao.music.model.LyricDownBean;
 import com.yibao.music.model.MusicBean;
 import com.yibao.music.model.MusicLyricBean;
-import com.yibao.music.network.RetrofitHelper;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -22,8 +19,7 @@ import java.util.List;
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.util
  * @文件名: LyricsUtil
- * @author: Stran
- * @Email: www.strangermy98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/1/28 22:08
  * @描述： {将歌词封装到List里}
  */
@@ -35,7 +31,7 @@ public class LyricsUtil {
 
     public static boolean checkLyricFile(String songName, String songArtist) {
         String path = Constants.MUSIC_LYRICS_ROOT + songName + "$$" + songArtist + ".lrc";
-        File file = CheckBuildVersionUtil.checkAndroidVersionQ() ? FileUtil.createFile(MusicApplication.getIntstance(), songName + "$$" + songArtist + ".lrc", Constants.SONG_LYRICS)
+        File file = CheckBuildVersionUtil.checkAndroidVersionQ() ? FileUtil.createFile(MusicApplication.getInstance(), songName + "$$" + songArtist + ".lrc", Constants.SONG_LYRICS)
                 : new File(path);
         boolean b = CheckBuildVersionUtil.checkAndroidVersionQ() ? FileUtil.isAndroidQFileExists(file.getAbsolutePath()) : file.exists();
         LogUtil.d(TAG, " 本地歌词信息  " + songName + " $$ " + songArtist + " == 是否存在    " + b);
@@ -122,7 +118,7 @@ public class LyricsUtil {
         if (lyricIsExists) {
             String path = Constants.MUSIC_LYRICS_ROOT + StringUtil.getSongName(musicBean.getTitle()) + "$$" + StringUtil.getSongName(musicBean.getArtist()) + ".lrc";
             Log.d(TAG, "lyrics path " + path);
-            File file = CheckBuildVersionUtil.checkAndroidVersionQ() ? FileUtil.createFile(MusicApplication.getIntstance(), StringUtil.getSongName(musicBean.getTitle()) + "$$" + StringUtil.getSongName(musicBean.getArtist()) + ".lrc", Constants.MUSIC_LYRICS_ROOT) : new File(path);
+            File file = CheckBuildVersionUtil.checkAndroidVersionQ() ? FileUtil.createFile(MusicApplication.getInstance(), StringUtil.getSongName(musicBean.getTitle()) + "$$" + StringUtil.getSongName(musicBean.getArtist()) + ".lrc", Constants.MUSIC_LYRICS_ROOT) : new File(path);
             try {
                 String charsetName = "utf-8";
                 br = new BufferedReader(new InputStreamReader(new FileInputStream(file), charsetName));

@@ -2,29 +2,15 @@ package com.yibao.music.util;
 
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-
 import com.yibao.music.MusicApplication;
-import com.yibao.music.model.LyricDownBean;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.RandomAccessFile;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
 
 /**
  * @author Luoshipeng
  * @ Author: Luoshipeng
  * @ Name:   DownloadLyricsUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/10/3/ 20:18
  * @ Des:    下载网络歌词
  */
@@ -52,7 +38,7 @@ public class DownloadLyricsUtil {
         String strContent = strcontent + "\r\n";
         try {
             File file = CheckBuildVersionUtil.checkAndroidVersionQ() ?
-                    FileUtil.createFile(MusicApplication.getIntstance(), songName + "$$" + artist + ".lrc", Constants.SONG_LYRICS)
+                    FileUtil.createFile(MusicApplication.getInstance(), songName + "$$" + artist + ".lrc", Constants.SONG_LYRICS)
                     : new File(path);
 
             if (!file.exists()) {

@@ -45,8 +45,7 @@ import io.reactivex.schedulers.Schedulers;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.playlist
  * @文件名: PlayListFragment
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.strangermy98@gmail.com
+ * @author: AppCompatActivity
  * @创建时间: 2018/2/9 16:07
  * @描述： {个人播放列表}
  */
@@ -83,7 +82,7 @@ public class PlayListFragment extends BaseLazyFragment {
     protected void initView(View view) {
         mMusicToolBar.setToolbarTitle(isShowDetailsView ? mTempTitle : getString(R.string.play_list));
         mAppBarLayout.setVisibility(isFromPlayListActivity && SpUtil.getAddToPlayListFdlag(mActivity) == Constants.NUMBER_ONE ? View.GONE : View.VISIBLE);
-        mPlayListDao = MusicApplication.getIntstance().getPlayListDao();
+        mPlayListDao = MusicApplication.getInstance().getPlayListDao();
 
 
     }

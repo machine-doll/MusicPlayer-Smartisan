@@ -1,6 +1,5 @@
 package com.yibao.music.base;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,12 @@ import androidx.annotation.Nullable;
 
 import butterknife.ButterKnife;
 
+/**
+ * @ Name:   TextChangedListener
+ * @ Time:   2020/04/05/ 21:16
+ * @ Des:    TODO
+ * @author Luoshipeng
+ */
 public abstract class BaseLazyFragment extends BaseMusicFragment {
     // 是否为第一次加载
     private boolean isFirstLoad = true;

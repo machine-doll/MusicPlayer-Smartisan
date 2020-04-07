@@ -19,7 +19,6 @@ import com.yibao.music.util.SpUtil;
 /**
  * @ Author: Luoshipeng
  * @ Name:   PlayListDetailView
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/12/7/ 11:59
  * @ Des:    TODO
  */

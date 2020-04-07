@@ -11,8 +11,7 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.util
  * @文件名: HanziToPinyins
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/7 11:52
  * @描述： {TODO}
  */

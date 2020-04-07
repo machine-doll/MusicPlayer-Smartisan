@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.util
  * @文件名: SpUtil
- * @author: Stran
+ * @author: Lsp
  * @创建时间: 2018/1/6 23:28
  * @描述： TODO
  */

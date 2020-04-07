@@ -20,7 +20,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * @author Stran
+ * @author Lsp
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.base
  * @文件名: BaseMusicFragment

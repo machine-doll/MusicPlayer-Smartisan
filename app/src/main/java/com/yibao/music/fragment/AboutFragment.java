@@ -45,7 +45,7 @@ import io.reactivex.schedulers.Schedulers;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.folder
  * @文件名: AboutFragment
- * @author: Stran
+ * @author: Lsp
  * @创建时间: 2018/2/9 20:51
  * @描述： {TODO}
  */

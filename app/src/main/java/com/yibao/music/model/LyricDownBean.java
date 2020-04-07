@@ -5,7 +5,6 @@ import java.io.File;
 /**
  * @author: Luoshipeng
  * @ Name:    LyricDownBean
- * @ Email:   strangermy98@gmail.com
  * @ GitHub:  https://github.com/1900Star
  * @ Time:    2019/4/14/ 22:58
  * @ Des:     TODO

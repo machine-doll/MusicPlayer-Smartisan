@@ -4,8 +4,7 @@ package com.yibao.music.model;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.model
  * @文件名: AddAndDeleteListBean
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: AppCompatActivity
  * @创建时间: 2018/2/25 23:29
  * @描述： {仅作为通知添加列表和删除更新的消息}
  */

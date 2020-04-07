@@ -16,7 +16,7 @@ import java.util.Objects;
 /**
  * Des：${为DialogFragmnet创建Dialog}
  * Time:2017/8/13 20:38
- * @author Stran
+ * @author Lsp
  */
 public class DialogUtil {
     public static Dialog getDialogFag(Context context, View view) {

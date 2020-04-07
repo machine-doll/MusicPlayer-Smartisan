@@ -7,9 +7,7 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 
 /**
- * @ Author: Luoshipeng
  * @ Name:   SearchHistoryBean
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/14/ 19:19
  * @ Des:    TODO
  * @author Luoshipeng

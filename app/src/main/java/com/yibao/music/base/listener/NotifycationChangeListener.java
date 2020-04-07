@@ -2,7 +2,6 @@ package com.yibao.music.base.listener;
 
 /**
  * @ Name:   NotifycationChangeListener
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/23/ 15:38
  * @ Des:    TODO
  * @author Luoshipeng

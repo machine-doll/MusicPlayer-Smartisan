@@ -1,7 +1,7 @@
 package com.yibao.music.util;
 
 /**
- * 作者：Stran on 2017/3/28 07:37
+ * 作者：Lsp on 2017/3/28 07:37
  * 描述：${本地默认图片地址}
  * 邮箱：strangermy@outlook.com
  *

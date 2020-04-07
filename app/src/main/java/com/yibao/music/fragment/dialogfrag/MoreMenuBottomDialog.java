@@ -30,7 +30,7 @@ import com.yibao.music.util.SpUtil;
  * Des：${TODO}
  * Time:2017/8/22 14:11
  *
- * @author Stran
+ * @author Lsp
  */
 public class MoreMenuBottomDialog {
     private static MusicBeanDao musicDao;
@@ -49,7 +49,7 @@ public class MoreMenuBottomDialog {
         mMusicPosition = musicPosition;
         mIsNeedScore = isNeedScore;
         mIsNeedSetTime = isNeedSetTime;
-        musicDao = MusicApplication.getIntstance().getMusicDao();
+        musicDao = MusicApplication.getInstance().getMusicDao();
         return new MoreMenuBottomDialog();
     }
 

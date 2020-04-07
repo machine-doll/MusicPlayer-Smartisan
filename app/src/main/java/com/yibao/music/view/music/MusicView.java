@@ -21,7 +21,7 @@ import java.util.Objects;
  * Des：${将音乐列表(RecyclerView) ,StickyView, SlideBar导航栏 封装到一个View里面，方便多个页面使用}
  * Time:2017/9/10 00:43
  *
- * @author Stran
+ * @author Lsp
  */
 
 public class MusicView

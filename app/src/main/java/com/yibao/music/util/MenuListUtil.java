@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * @ Name:   MenuListUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/12/1/ 23:15
  * @ Des:    TODO
  * @author Luoshipeng

@@ -13,11 +13,11 @@ import com.yibao.music.fragment.SongCategoryFragment;
 import com.yibao.music.fragment.SongFragment;
 
 /**
- * 作者：Stran on 2017/3/23 03:31
+ * 作者：Lsp on 2017/3/23 03:31
  * 描述：${TODO}
  * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 public class SongViewPagerAdapter
         extends FragmentStateAdapter {

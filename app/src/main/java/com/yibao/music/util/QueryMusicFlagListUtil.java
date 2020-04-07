@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * @author Luoshipeng
  * @ Name:   QueryMusicFlagListUtil
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/5/6/ 18:02
  * @ Des:    //根据条件查询MusicList
  */
@@ -41,7 +40,7 @@ public class QueryMusicFlagListUtil {
             return MusicListUtil.sortMusicList(musicBeanDao.queryBuilder().list(), Constants.SORT_DOWN_TIME);
             // 收藏列表
         } else if (sortListFlag == Constants.NUMBER_EIGHT) {
-            List<MusicBean> musicBeanList = MusicApplication.getIntstance()
+            List<MusicBean> musicBeanList = MusicApplication.getInstance()
                     .getMusicDao().queryBuilder()
                     .where(MusicBeanDao.Properties.IsFavorite.eq(true)).build().list();
             Collections.sort(musicBeanList);

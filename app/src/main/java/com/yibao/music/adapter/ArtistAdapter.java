@@ -20,8 +20,7 @@ import butterknife.ButterKnife;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.artist
  * @文件名: ArtistAdapter
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/7 17:18
  * @描述： {TODO}
  */

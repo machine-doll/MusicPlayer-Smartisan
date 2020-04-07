@@ -3,11 +3,10 @@ package com.yibao.music.util;
 import android.os.Environment;
 
 /**
- * 作者：Stran on 2017/3/23 15:26
+ * 作者：Lsp on 2017/3/23 15:26
  * 描述：${常量类}
- * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 public class Constants {
     /**

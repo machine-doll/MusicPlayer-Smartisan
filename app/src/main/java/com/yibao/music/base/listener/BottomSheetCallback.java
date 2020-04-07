@@ -6,7 +6,6 @@ import android.view.View;
 
 /**
  * @ Name:   BottomSheetCallback
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2019/2/1/ 3:27
  * @ Des:    TODO
  * @author Luoshipeng

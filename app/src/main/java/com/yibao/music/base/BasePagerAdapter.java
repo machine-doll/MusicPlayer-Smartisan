@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 
 /**
  * @ Name:   BasePagerAdapter
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/11/ 0:16
  * @ Des:    TODO
  * @author Luoshipeng

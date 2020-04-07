@@ -21,7 +21,7 @@ import java.util.List;
  * Des：${自定义歌词View}
  * Time:2017/9/14 01:16
  *
- * @author Stran
+ * @author Lsp
  */
 public class LyricsView
         extends androidx.appcompat.widget.AppCompatTextView {

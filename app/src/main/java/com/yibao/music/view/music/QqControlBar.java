@@ -20,7 +20,6 @@ import java.util.List;
 
 /**
  * @ Name:   QqControlBar
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/8/11/ 21:50
  * @ Des:    TODO
  * @author Luoshipeng

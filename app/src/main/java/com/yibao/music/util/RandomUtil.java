@@ -8,7 +8,7 @@ import java.util.Random;
  * Des：${TODO}
  * Time:2017/8/14 05:01
  *
- * @author Stran
+ * @author Lsp
  */
 public class RandomUtil {
     public static int getRandomPostion(int listSize) {

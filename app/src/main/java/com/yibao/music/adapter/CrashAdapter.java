@@ -14,10 +14,9 @@ import java.io.File;
 
 /**
  * @ Name:   CrashAdapter
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2019/1/21/ 0:04
  * @ Des:    崩溃日志列表
- * @author Luoshipeng
+ * @author Lsp
  */
 public class CrashAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements SectionIndexer {
     private File[] mArray;

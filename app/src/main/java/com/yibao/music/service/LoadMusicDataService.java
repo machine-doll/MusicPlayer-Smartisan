@@ -16,12 +16,7 @@ import com.yibao.music.util.LogUtil;
 import com.yibao.music.util.MusicListUtil;
 import com.yibao.music.util.ReadFavoriteFileUtil;
 import com.yibao.music.util.RxBus;
-import com.yibao.music.util.StringUtil;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -31,8 +26,7 @@ import java.util.Set;
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.service
  * @文件名: LoadMusicDataServices
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/1/30 23:38
  * @描述： {加载音乐的后台Service}
  */
@@ -46,7 +40,7 @@ public class LoadMusicDataService extends IntentService {
     @Override
     public void onCreate() {
         super.onCreate();
-        mMusicDao = MusicApplication.getIntstance().getMusicDao();
+        mMusicDao = MusicApplication.getInstance().getMusicDao();
         mBus = RxBus.getInstance();
     }
 

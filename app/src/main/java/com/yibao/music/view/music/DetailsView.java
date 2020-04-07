@@ -49,7 +49,7 @@ import java.util.Objects;
  * Des：${将详情页面封装到一个Viwe里面，方便多个页面使用}
  * Time:2017/9/10 00:43
  *
- * @author Stran
+ * @author Lsp
  */
 
 public class DetailsView

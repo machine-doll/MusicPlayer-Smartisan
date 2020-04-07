@@ -25,9 +25,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * @author Luoshipeng
- * @ author: Luoshipeng
  * @ Name:   AlbumCategoryFragment
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/11/ 23:47
  * @ Des:    TODO
  */

@@ -23,7 +23,6 @@ import io.reactivex.schedulers.Schedulers;
  * @author Luoshipeng
  * @ Author: Luoshipeng
  * @ Name:   ReadFavoriteFile
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/8/30/ 16:59
  * @ Des:    读取歌曲收藏文件
  */

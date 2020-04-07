@@ -36,11 +36,10 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Author：Sid
  * Des：${TODO}
  * Time:2017/5/31 18:37
  *
- * @author Stran
+ * @author Lsp
  */
 public class AddListDialog
         extends DialogFragment implements View.OnClickListener {
@@ -100,7 +99,7 @@ public class AddListDialog
     private void initView() {
         TextView title = mView.findViewById(R.id.tv_title);
         mEditAddList = mView.findViewById(R.id.edit_add_list);
-        mTvAddListCancle = mView.findViewById(R.id.tv_add_list_cancle);
+        mTvAddListCancle = mView.findViewById(R.id.tv_add_list_cancel);
         mTvAddListContinue = mView.findViewById(R.id.tv_add_list_continue);
         mNoInputTv = mView.findViewById(R.id.tv_no_input_cancel);
         mNoInputTv.setVisibility(View.VISIBLE);
@@ -112,7 +111,7 @@ public class AddListDialog
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.tv_add_list_cancle) {
+        if (id == R.id.tv_add_list_cancel) {
             dismiss();
         } else if (id == R.id.tv_add_list_continue) {
             addNewPlayList();
@@ -121,7 +120,7 @@ public class AddListDialog
 
     private void addNewPlayList() {
         String listTitle = mEditAddList.getText().toString().trim();
-        PlayListBeanDao playListDao = MusicApplication.getIntstance().getPlayListDao();
+        PlayListBeanDao playListDao = MusicApplication.getInstance().getPlayListDao();
         if (!listTitle.isEmpty()) {
             List<PlayListBean> beanList = playListDao.queryBuilder().where(PlayListBeanDao.Properties.Title.eq(listTitle)).list();
             if (beanList.size() > 0) {

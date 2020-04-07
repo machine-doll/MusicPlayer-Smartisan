@@ -9,11 +9,11 @@ import com.yibao.music.fragment.AlbumCategoryFragment;
 import com.yibao.music.fragment.SongCategoryFragment;
 
 /**
- * 作者：Stran on 2017/3/23 03:31
+ * 时间：2017/3/23 03:31
  * 描述：${TODO}
  * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 public class AlbumViewPagerAdapter
         extends FragmentStateAdapter {

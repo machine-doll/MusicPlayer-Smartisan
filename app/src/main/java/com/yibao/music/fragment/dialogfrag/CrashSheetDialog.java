@@ -31,7 +31,7 @@ import java.util.List;
  * Des：${TODO}
  * Time:2017/8/22 14:11
  *
- * @author Stran
+ * @author Lsp
  */
 public class CrashSheetDialog {
     private Context mContext;

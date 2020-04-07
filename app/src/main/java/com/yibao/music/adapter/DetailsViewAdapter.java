@@ -35,8 +35,7 @@ import butterknife.ButterKnife;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.playlist
  * @文件名: PlayListAdapter
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/9 16:22
  * @描述： { 1 ArtistFragment 、 2 AlbumFragment、 3 SearchActivity 、4 PlayListDetailView 会使用这个Adapter，dataFlag ( 1 、2、3、4)作为使用页面的标识}
  */
@@ -76,7 +75,7 @@ public class DetailsViewAdapter extends BaseRvAdapter<MusicBean> {
                 // 播放列表的详情列表有侧滑删除
                 detailsHolder.mSlideDeleteView.setOnClickListener(v -> {
                     info.setPlayListFlag(Constants.PLAY_LIST_BACK_FLAG);
-                    MusicApplication.getIntstance().getMusicDao().update(info);
+                    MusicApplication.getInstance().getMusicDao().update(info);
                     RxBus.getInstance().post(new AddAndDeleteListBean(Constants.NUMBER_SIX, adapterPosition, info.getTitle()));
                 });
             }
@@ -103,7 +102,7 @@ public class DetailsViewAdapter extends BaseRvAdapter<MusicBean> {
      * @param queryConditions 搜索的歌名
      */
     private static void insertSearchBean(String queryConditions) {
-        SearchHistoryBeanDao searchDao = MusicApplication.getIntstance().getSearchDao();
+        SearchHistoryBeanDao searchDao = MusicApplication.getInstance().getSearchDao();
         List<SearchHistoryBean> historyList = searchDao.queryBuilder().where(SearchHistoryBeanDao.Properties.SearchContent.eq(queryConditions)).build().list();
         if (historyList.size() < 1) {
             searchDao.insert(new SearchHistoryBean(queryConditions, Long.toString(System.currentTimeMillis())));

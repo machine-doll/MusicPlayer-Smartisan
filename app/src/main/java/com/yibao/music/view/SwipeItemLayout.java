@@ -21,7 +21,7 @@ import com.yibao.music.R;
 /**
  * Des：${TODO}
  * Time:2016/11/5 00:25
- * @author Stran
+ * @author Lsp
  */
 
 public class SwipeItemLayout

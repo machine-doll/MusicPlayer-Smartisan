@@ -1,8 +1,6 @@
 package com.yibao.music;
 
-import android.app.Activity;
 import android.app.Application;
-import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import androidx.multidex.MultiDex;
@@ -18,11 +16,11 @@ import com.yibao.music.model.greendao.SearchHistoryBeanDao;
 import com.yibao.music.util.CrashHandler;
 
 /**
- * 作者：Stran on 2017/3/23 15:12
+ * 作者：Lsp on 2017/3/23 15:12
  * 描述：${TODO}
  * 邮箱：strangermy@outlook.com
  *
- * @author Stran
+ * @author Lsp
  */
 public class MusicApplication
         extends Application {
@@ -33,7 +31,7 @@ public class MusicApplication
     private DaoSession mDaoSession;
     private static MusicBeanDao musicBeanDao;
 
-    public static MusicApplication getIntstance() {
+    public static MusicApplication getInstance() {
         if (appContext == null) {
             appContext = new MusicApplication();
         }

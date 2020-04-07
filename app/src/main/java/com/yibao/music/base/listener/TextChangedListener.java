@@ -5,7 +5,6 @@ import android.text.TextWatcher;
 
 /**
  * @ Name:   TextChangedListener
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/16/ 21:16
  * @ Des:    TODO
  * @author Luoshipeng

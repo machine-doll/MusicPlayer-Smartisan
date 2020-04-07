@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Luoshipeng
  * @ Name:    ThreadPoolProxyFactory
- * @ Email:   strangermy98@gmail.com
  * @ GitHub:  https://github.com/1900Star
  * @ Time:    2019/3/3/ 18:27
  * @ Des:     TODO

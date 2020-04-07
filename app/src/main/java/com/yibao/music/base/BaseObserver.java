@@ -5,7 +5,6 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * @ Name:   BaseObserver
- * @ Email:  strangermy98@gmail.com
  * @ Time:   2018/9/14/ 17:36
  * @ Des:    TODO
  * @author Luoshipeng

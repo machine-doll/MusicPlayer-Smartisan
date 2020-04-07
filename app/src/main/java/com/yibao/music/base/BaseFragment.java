@@ -19,7 +19,7 @@ import butterknife.Unbinder;
 import io.reactivex.disposables.CompositeDisposable;
 
 /**
- * @author Stran
+ * @author Lsp
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.base
  * @文件名: BaseMusicFragment
@@ -38,8 +38,8 @@ public abstract class BaseFragment extends Fragment {
     protected String TAG = " ==== " + this.getClass().getSimpleName() + "  ";
 
     protected BaseFragment() {
-        mMusicBeanDao = MusicApplication.getIntstance().getMusicDao();
-        mAlbumDao = MusicApplication.getIntstance().getAlbumDao();
+        mMusicBeanDao = MusicApplication.getInstance().getMusicDao();
+        mAlbumDao = MusicApplication.getInstance().getAlbumDao();
 
     }
 

@@ -11,7 +11,7 @@ import org.greenrobot.greendao.annotation.Generated;
  * Des：${音乐实体类,收藏 删除等}
  * Time:2017/9/3 14:31
  *
- * @author Stran
+ * @author Lsp
  */
 @Entity
 public class MusicInfo

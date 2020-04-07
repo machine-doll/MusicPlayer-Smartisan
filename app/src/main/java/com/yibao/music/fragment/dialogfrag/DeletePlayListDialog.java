@@ -20,11 +20,10 @@ import com.yibao.music.util.MusicDaoUtil;
 import com.yibao.music.util.RxBus;
 
 /**
- * Author：Sid
  * Des：${删除列表}
  * Time:2017/5/31 18:37
  *
- * @author Stran
+ * @author Lsp
  */
 public class DeletePlayListDialog
         extends DialogFragment implements View.OnClickListener {
@@ -78,7 +77,7 @@ public class DeletePlayListDialog
         mTvCancelDelete = mView.findViewById(R.id.tv_delete_list_cancel);
         mTvDelete = mView.findViewById(R.id.tv_delete_list_continue);
         mBus = RxBus.getInstance();
-        MusicBeanDao musicDao = MusicApplication.getIntstance().getMusicDao();
+        MusicBeanDao musicDao = MusicApplication.getInstance().getMusicDao();
         mPlayListBean = getArguments().getParcelable("musicInfo");
         mPageType = getArguments().getInt("pageType");
         if (mPlayListBean != null) {

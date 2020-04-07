@@ -2,12 +2,16 @@ package com.yibao.music.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.Locale;
-
+/**
+ * @ Author: Luoshipeng
+ * @ Name:   TimeUtil
+ * @ Time:   2018/5/5/ 18:01
+ * @ Des:    //TODO
+ */
 public class TimeUtil {
     //获取当前完整的日期和时间
     public static String getNowDateTime(){
@@ -51,8 +55,10 @@ public class TimeUtil {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
-        if (w < 0)
+        if (w < 0) {
+
             w = 0;
+        }
         return weekDays[w];
     }
 

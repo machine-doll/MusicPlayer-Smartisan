@@ -7,7 +7,7 @@ import com.yibao.music.BuildConfig;
 /**
  * Log统一管理类
  *
- * @author Stran
+ * @author Lsp
  */
 public class LogUtil {
 

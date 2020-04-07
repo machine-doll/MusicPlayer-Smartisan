@@ -7,7 +7,7 @@ import androidx.viewpager.widget.ViewPager;
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.music.musiclist
  * @文件名: MusicPagerListener
- * @author: Stran
+ * @author: Lsp
  * @创建时间: 2018/1/9 1:10
  * @描述： TODO
  */

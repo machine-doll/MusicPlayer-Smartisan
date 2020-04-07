@@ -18,8 +18,7 @@ import java.util.Objects;
  * @项目名： BigGirl
  * @包名： com.yibao.biggirl.factory
  * @文件名: RecyclerFactory
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2017/5/9 15:02
  * @描述： {TODO}
  */
@@ -30,13 +29,13 @@ public class RecyclerFactory {
 
     public static RecyclerView createRecyclerView(int type,
                                                   RecyclerView.Adapter<RecyclerView.ViewHolder> adapter) {
-        RecyclerView recyclerView = new RecyclerView(MusicApplication.getIntstance());
+        RecyclerView recyclerView = new RecyclerView(MusicApplication.getInstance());
 
         if (type == RECYCLERVIEW_NORMAL) {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(RecyclerView.LayoutParams.MATCH_PARENT,
                     RecyclerView.LayoutParams.MATCH_PARENT);
 
-            LinearLayoutManager manager = new LinearLayoutManager(MusicApplication.getIntstance());
+            LinearLayoutManager manager = new LinearLayoutManager(MusicApplication.getInstance());
             manager.setOrientation(LinearLayoutManager.VERTICAL);
             recyclerView.setVerticalScrollBarEnabled(true);
             recyclerView.setLayoutManager(manager);

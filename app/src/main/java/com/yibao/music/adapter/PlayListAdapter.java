@@ -30,8 +30,7 @@ import butterknife.ButterKnife;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.playlist
  * @文件名: PlayListAdapter
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/9 16:22
  * @描述： {TODO}
  */
@@ -54,7 +53,7 @@ public class PlayListAdapter extends BaseRvAdapter<PlayListBean> {
             playViewHolder.mIvItemEdit.setVisibility(isSelectStatus ? View.VISIBLE : View.GONE);
             playViewHolder.mIvItemArrow.setVisibility(isSelectStatus ? View.GONE : View.VISIBLE);
             playViewHolder.mTvPlayListName.setText(playListBean.getTitle());
-            List<MusicBean> musicBeans = MusicApplication.getIntstance().getMusicDao().queryBuilder().where(MusicBeanDao.Properties.PlayListFlag.eq(playListBean.getTitle())).build().list();
+            List<MusicBean> musicBeans = MusicApplication.getInstance().getMusicDao().queryBuilder().where(MusicBeanDao.Properties.PlayListFlag.eq(playListBean.getTitle())).build().list();
             String count = musicBeans.size() + " 首歌曲";
             playViewHolder.mTvPlayListCount.setText(count);
             int adapterPosition = playViewHolder.getAdapterPosition();

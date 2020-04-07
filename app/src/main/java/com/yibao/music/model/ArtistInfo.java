@@ -8,8 +8,7 @@ import androidx.annotation.NonNull;
  * @项目名： ArtisanMusic
  * @包名： com.yibao.music.model
  * @文件名: ArtistInfo
- * @author: Stran
- * @Email: www.strangermy@outlook.com / www.stranger98@gmail.com
+ * @author: Lsp
  * @创建时间: 2018/2/7 16:51
  * @描述： {TODO}
  */
