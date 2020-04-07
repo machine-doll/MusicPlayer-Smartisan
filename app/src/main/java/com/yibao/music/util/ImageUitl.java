@@ -148,8 +148,8 @@ public class ImageUitl {
             public void onResponse(@NonNull Call call, @NonNull Response response) {
                 if (response.isSuccessful()) {
                     LogUtil.d(TAG, "图片地址OK");
-                    Observable.create((ObservableOnSubscribe<File>) e -> {
-                        e.onNext(Glide.with(context)
+                    Disposable subscribe = Observable.create((ObservableOnSubscribe<File>) e -> {
+                        e.onNext(Glide.with(context.getApplicationContext())
                                 .load(url).error(R.drawable.nina)
                                 .downloadOnly(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
                                 .get());
@@ -173,6 +173,7 @@ public class ImageUitl {
                                 copy(file, destFile);
 
                             });
+                    subscribe.dispose();
                 } else {
                     LogUtil.d(TAG, "图片地址错误");
                 }

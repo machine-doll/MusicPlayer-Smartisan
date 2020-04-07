@@ -43,12 +43,18 @@ public class QqMusicRemote {
                 .subscribe(new BaseObserver<SearchSong>() {
                     @Override
                     public void onNext(SearchSong searchSong) {
-                        String albumMid = searchSong.getData().getSong().getList().get(0).getAlbummid();
-                        String imgUrl = albumUrlHead + albumMid + ".jpg";
-                        // 将专辑图片保存到本地
-                        ImageUitl.glideSaveImg(context, imgUrl, 1, songName, songName);
-                        LogUtil.d(TAG, "图片地址 " + imgUrl);
-                        listener.imageUrl(imgUrl);
+                        SearchSong.DataBean.SongBean song = searchSong.getData().getSong();
+                        if (song != null) {
+                            String albumMid = searchSong.getData().getSong().getList().get(0).getAlbummid();
+                            String imgUrl = albumUrlHead + albumMid + ".jpg";
+                            // 将专辑图片保存到本地
+                            ImageUitl.glideSaveImg(context, imgUrl, 1, songName, songName);
+                            LogUtil.d(TAG, "图片地址 " + imgUrl);
+                            listener.imageUrl(imgUrl);
+
+                        } else {
+                            listener.imageUrl(null);
+                        }
 
                     }
 
@@ -174,7 +180,7 @@ public class QqMusicRemote {
                 .subscribe(new BaseObserver<OnlineSongLrc>() {
                     @Override
                     public void onNext(OnlineSongLrc onlineSongLrc) {
-                            sendSearchLyricsResult(onlineSongLrc, songName, artist);
+                        sendSearchLyricsResult(onlineSongLrc, songName, artist);
                     }
 
                     @Override

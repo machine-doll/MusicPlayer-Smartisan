@@ -97,7 +97,6 @@ public class SongFragment extends BaseMusicFragment {
         mViewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                super.onPageSelected(position);
                 switchListCategory(position);
             }
         });
