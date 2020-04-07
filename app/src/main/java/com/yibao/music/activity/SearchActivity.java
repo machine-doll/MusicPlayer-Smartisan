@@ -223,7 +223,7 @@ public class SearchActivity extends BaseTansitionActivity implements OnMusicItem
 
     private void switchListCategory(int position) {
         currentCategoryPosition = position;
-        mViewPager.setCurrentItem(position, false);
+        mViewPager.setCurrentItem(position, true);
         mBus.post(new SearchCategoryBean(getDataFlag(), mSearchCondition));
         switch (position) {
             case 0:

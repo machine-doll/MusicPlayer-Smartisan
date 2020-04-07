@@ -155,7 +155,7 @@ public class SongFragment extends BaseMusicFragment {
 
     private void switchListCategory(int flag) {
         curentIndex = flag;
-        mViewPager2.setCurrentItem(flag, false);
+        mViewPager2.setCurrentItem(flag, true);
 
         switch (flag) {
             case 0:

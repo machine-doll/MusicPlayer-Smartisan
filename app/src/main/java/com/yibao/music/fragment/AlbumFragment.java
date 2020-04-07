@@ -214,7 +214,7 @@ public class AlbumFragment extends BaseLazyFragment {
 
 
     private void switchCategory(int showType) {
-        mViewPager.setCurrentItem(showType, false);
+        mViewPager.setCurrentItem(showType, true);
         if (showType == Constants.NUMBER_ZERO) {
 
             mAlbumCategoryListLl.setBackgroundResource(R.drawable.btn_category_songname_down_selector);
