@@ -40,7 +40,7 @@ public class SongFragment extends BaseMusicFragment {
     @BindView(R.id.music_toolbar_list)
     MusicToolBar mMusicToolBar;
     @BindView(R.id.iv_music_category_paly)
-    ImageView mIvMusicCategoryPaly;
+    ImageView mIvMusicCategoryPlay;
     @BindView(R.id.tv_music_category_songname)
     TextView mMusicCategorySongName;
     @BindView(R.id.tv_music_category_score)
@@ -48,11 +48,11 @@ public class SongFragment extends BaseMusicFragment {
     @BindView(R.id.tv_music_category_frequency)
     TextView mMusicCategoryFrequency;
     @BindView(R.id.tv_music_category_addtime)
-    TextView mMusicCategoryAddtime;
+    TextView mMusicCategoryAddTime;
     @BindView(R.id.view_pager2_song)
     ViewPager2 mViewPager2;
-    private int curentIndex = 0;
-    private boolean isSelecteStatus = false;
+    private int currentIndex = 0;
+    private boolean isSelectStatus = false;
 
     @Nullable
     @Override
@@ -66,7 +66,7 @@ public class SongFragment extends BaseMusicFragment {
 
     @Override
     protected boolean getIsOpenDetail() {
-        return isSelecteStatus;
+        return isSelectStatus;
     }
 
     @Override
@@ -74,7 +74,8 @@ public class SongFragment extends BaseMusicFragment {
         super.onResume();
         mMusicToolBar.setToolbarTitle(getString(R.string.music_song));
         initRxBusData();
-        switchListCategory(curentIndex);
+        switchListCategory(currentIndex);
+
     }
 
     private void initRxBusData() {
@@ -84,7 +85,7 @@ public class SongFragment extends BaseMusicFragment {
                     .observeOn(AndroidSchedulers.mainThread()).subscribe(editBean -> {
                         mMusicToolBar.setTvEditText(R.string.tv_edit);
                         mMusicToolBar.setTvDeleteVisibility(View.GONE);
-                        isSelecteStatus = false;
+                        isSelectStatus = false;
                     });
         }
     }
@@ -107,11 +108,11 @@ public class SongFragment extends BaseMusicFragment {
         mMusicToolBar.setClickListener(new MusicToolBar.OnToolbarClickListener() {
             @Override
             public void clickEdit() {
-                interceptBackEvent(isSelecteStatus ? Constants.NUMBER_ELEVEN : Constants.NUMBER_ZERO);
+                interceptBackEvent(isSelectStatus ? Constants.NUMBER_ELEVEN : Constants.NUMBER_ZERO);
                 mBus.post(Constants.SONG_FAG_EDIT, Constants.NUMBER_ONE);
-                mMusicToolBar.setTvEditText(isSelecteStatus ? R.string.tv_edit : R.string.complete);
-                mMusicToolBar.setTvDeleteVisibility(isSelecteStatus ? View.GONE : View.VISIBLE);
-                isSelecteStatus = !isSelecteStatus;
+                mMusicToolBar.setTvEditText(isSelectStatus ? R.string.tv_edit : R.string.complete);
+                mMusicToolBar.setTvDeleteVisibility(isSelectStatus ? View.GONE : View.VISIBLE);
+                isSelectStatus = !isSelectStatus;
             }
 
             @Override
@@ -152,7 +153,7 @@ public class SongFragment extends BaseMusicFragment {
 
 
     private void switchListCategory(int flag) {
-        curentIndex = flag;
+        currentIndex = flag;
         mViewPager2.setCurrentItem(flag, true);
 
         switch (flag) {
@@ -173,8 +174,8 @@ public class SongFragment extends BaseMusicFragment {
                 break;
             case 3:
                 setAllCategoryNotNormal(Constants.NUMBER_FOUR);
-                mMusicCategoryAddtime.setBackgroundResource(R.drawable.btn_category_views_down_selector);
-                mMusicCategoryAddtime.setTextColor(ColorUtil.wihtle);
+                mMusicCategoryAddTime.setBackgroundResource(R.drawable.btn_category_views_down_selector);
+                mMusicCategoryAddTime.setTextColor(ColorUtil.wihtle);
                 break;
             default:
                 break;
@@ -191,8 +192,8 @@ public class SongFragment extends BaseMusicFragment {
         mMusicCategoryScore.setBackgroundResource(R.drawable.btn_category_score_selector);
         mMusicCategoryFrequency.setTextColor(ColorUtil.textName);
         mMusicCategoryFrequency.setBackgroundResource(R.drawable.btn_category_score_selector);
-        mMusicCategoryAddtime.setTextColor(ColorUtil.textName);
-        mMusicCategoryAddtime.setBackgroundResource(R.drawable.btn_category_views_selector);
+        mMusicCategoryAddTime.setTextColor(ColorUtil.textName);
+        mMusicCategoryAddTime.setBackgroundResource(R.drawable.btn_category_views_selector);
         SpUtil.setSortFlag(mActivity, playListFlag);
     }
 

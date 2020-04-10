@@ -91,15 +91,10 @@ public class SplashActivity
             mIsFirstScanner = true;
             // 是否是首次安装，本地数据库是否创建，等于 8 表示不是首次安装，数据库已经创建，直接进入MusicActivity。
             if (SpUtil.getLoadMusicFlag(this) == Constants.NUMBER_EIGHT) {
+//                // 首次安装，开启服务加载本地音乐，创建本地数据库。
                 countDownOpareton(true);
             } else {
                 ScannerConfigDialog.newInstance(true).show(getSupportFragmentManager(), "auto_config");
-
-//                // 首次安装，开启服务加载本地音乐，创建本地数据库。
-//                if (!ServiceUtil.isServiceRunning(this, Constants.LOAD_SERVICE_NAME)) {
-//                    startService(new Intent(this, LoadMusicDataService.class));
-//                }
-//                updataLoadProgress();
             }
 
         } else {
