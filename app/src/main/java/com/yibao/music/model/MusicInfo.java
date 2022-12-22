@@ -7,6 +7,8 @@ import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
 
+import java.util.Objects;
+
 /**
  * Des：${音乐实体类,收藏 删除等}
  * Time:2017/9/3 14:31
@@ -169,13 +171,13 @@ public class MusicInfo
 
         if (albumId != musicInfo.albumId) return false;
         if (playStatus != musicInfo.playStatus) return false;
-        if (id != null ? !id.equals(musicInfo.id) : musicInfo.id != null) return false;
-        if (title != null ? !title.equals(musicInfo.title) : musicInfo.title != null) return false;
-        if (artist != null ? !artist.equals(musicInfo.artist) : musicInfo.artist != null)
+        if (!Objects.equals(id, musicInfo.id)) return false;
+        if (!Objects.equals(title, musicInfo.title)) return false;
+        if (!Objects.equals(artist, musicInfo.artist))
             return false;
-        if (album != null ? !album.equals(musicInfo.album) : musicInfo.album != null) return false;
-        if (time != null ? !time.equals(musicInfo.time) : musicInfo.time != null) return false;
-        return songUrl != null ? songUrl.equals(musicInfo.songUrl) : musicInfo.songUrl == null;
+        if (!Objects.equals(album, musicInfo.album)) return false;
+        if (!Objects.equals(time, musicInfo.time)) return false;
+        return Objects.equals(songUrl, musicInfo.songUrl);
     }
 
     @Override

@@ -14,7 +14,7 @@ android {
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
-            abiFilters 'arm64-v8a'
+            abiFilters 'arm64-v8a', 'x86_64'
         }
         packagingOptions {
             doNotStrip "*/arm64-v8a/*.so"
@@ -55,29 +55,24 @@ android {
         testImplementation 'junit:junit:4.13.2'
         implementation 'com.belerweb:pinyin4j:2.5.0'
         implementation 'org.greenrobot:greendao:3.3.0'
-        implementation 'com.google.code.gson:gson:2.8.9'
+        implementation 'com.google.code.gson:gson:2.9.0'
         implementation 'androidx.viewpager2:viewpager2:1.0.0'
-        implementation 'com.google.android.material:material:1.6.1'
+        implementation 'com.google.android.material:material:1.7.0'
         implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
-        implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+        implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
         implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-        implementation 'com.github.bumptech.glide:glide:4.12.0'
+        implementation 'com.github.bumptech.glide:glide:4.13.2'
         implementation 'com.squareup.retrofit2:retrofit:2.9.0'
         implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
         implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
-        annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
         implementation 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.1.0'
         debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
         // RxBinding
         implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
-        // OAID
-        implementation files('libs/miit_mdid_1.0.10.aar')
-        // 百度统计
-        implementation 'com.baidu.mobstat:mtj-sdk:4.0.7.6'
         // 65536
         implementation 'com.android.support:multidex:1.0.3'
 
-        implementation 'me.jessyan:autosize:1.2.1'
 
 
 

@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Process;
 
-import com.baidu.mobstat.StatService;
 import com.yibao.music.MusicApplication;
 
 import java.io.BufferedWriter;
@@ -65,7 +64,6 @@ public class CrashHandler
 
     private void uploadExceptionToServer(Throwable ex) {
         //将异常信息上传到服务器
-        StatService.recordException(mContext, ex);
     }
 
     private void dumpExceptionToSdCard(Throwable ex)

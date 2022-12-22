@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.multidex.MultiDex;
 
-import com.baidu.mobstat.StatService;
 import com.yibao.music.model.greendao.AlbumInfoDao;
 import com.yibao.music.model.greendao.DaoMaster;
 import com.yibao.music.model.greendao.DaoSession;
@@ -42,8 +41,6 @@ public class MusicApplication
     public void onCreate() {
         super.onCreate();
         appContext = this;
-        StatService.setAuthorizedState(this, false);
-        StatService.start(this);
         CrashHandler.getInstance().init();
         setUpDataBase();
         MultiDex.install(this);

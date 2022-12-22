@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.baidu.mobstat.StatService;
 import com.yibao.music.MusicApplication;
 import com.yibao.music.R;
 import com.yibao.music.activity.PlayActivity;
@@ -61,7 +60,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatService.start(getApplicationContext());
         mBus = RxBus.getInstance();
         mSps = new SpUtils(MusicApplication.getInstance(),Constant.MUSIC_CONFIG);
 
